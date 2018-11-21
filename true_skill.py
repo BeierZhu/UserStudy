@@ -29,9 +29,9 @@ for ff in os.listdir(path):
 			new_1, new_2 = rate_1vs1(rate_list[idx1], rate_list[idx2], drawn=True)
 			rate_list[idx1], rate_list[idx2] = new_1, new_2
 		elif ii[4] == '0':
-			# new_1, new_2 = rate_1vs1(rate_list[idx1], rate_list[idx2])
-			# rate_list[idx1], rate_list[idx2] = new_1, new_2
-			pass
+			new_1, new_2 = rate_1vs1(rate_list[idx1], rate_list[idx2])
+			rate_list[idx1], rate_list[idx2] = new_1, new_2
+			
 		elif ii[4] == '1':
 			new_1, new_2 = rate_1vs1(rate_list[idx2], rate_list[idx1])
 			rate_list[idx2], rate_list[idx1] = new_1, new_2
